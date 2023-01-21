@@ -69,7 +69,7 @@ const ImageList = ({ imageList, loadingText }) => {
                 endIndex ?
                     <div style={styles.wrapperStyle}>
                         <img src={imageList[currentIndex]?.url} style={{ width: imageList[currentIndex]?.imageWidth }} loading={'lazy'}
-                            alt={'Image not loaded'} />
+                            alt={'Not loaded'} />
                         <div style={styles.indexerWrapper} ref={wrapperRef} tabIndex={-1}>
                             {indices.map(index =>
                                 <div key={index} onClick={() => setCurrentIndex(index)}
